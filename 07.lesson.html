@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>a6</title>
+  <style>
+  </style>
+</head>
+
+  <body>
+
+
+  <script>
+    function hello(name = 'Milosz'){
+      console.log(`hello! ${name}`)
+    }
+    hello()
+
+    function convert(number, symbol){
+      if (symbol === 'C'){
+        const Farenhait = (number*9/5) +32
+        return Farenhait
+      }
+      else if (symbol === 'F'){
+        const C =  (number -32) * 5/9
+        return C
+      }
+      else{
+        return 'wrong symbol'
+      }
+    }
+      
+  console.log(convert(86 ,'X'))
+
+
+  </script>
+  </body>
+  
+</html>
