@@ -9,16 +9,26 @@
   <body>
     <button>hello</button>
 
+    <button class="js-button">2button</button>
+
   <script>
+    console.log(document.querySelector('button').innerHTML);
+
+    document.querySelector('button')  
+      .innerHTML = 'Chenge';
+
+    const buttonElement = document.querySelector('.js-button');
+    console.log(buttonElement);
     /*
     document.body.innerHTML = "hello";
     document.title = "Good job!"
-    */
+    
 
     console.log(document.title);
     console.log(document.body);
 
     console.log(document.body.innerHTML);
+    */
   </script>
   </body>
   
