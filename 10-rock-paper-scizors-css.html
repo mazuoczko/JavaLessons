@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rps</title>
+
+   <link rel="stylesheet"
+   href="styles/10-rock-payper-scissors.css">
+
+  </head>
+ 
+  <body>
+
+    <p class="title"> Rock Paper Scissors</p>
+
+    <button onclick =" 
+      playGame('paper');
+      "
+      class="css-move-button"
+      ><img src="images/paper-emoji.png" class="css-move-icon"></button>
+
+    <button onclick=" 
+      playGame('rock');
+      "
+      class="css-move-button"
+      ><img src="images/rock-emoji.png" class="css-move-icon"></button>
+
+    <button onclick=" 
+      playGame('scissors');
+      "
+      class="css-move-button"
+      ><img src="images/scissors-emoji.png" class="css-move-icon"></button>
+
+    <p class="js-result css-result"></p>
+
+    <p class="js-moves"></p>
+
+    <p class="js-score css-score"></p>
+
+
+    <button onclick="
+    score.wins = 0; 
+    score.losses = 0; 
+    score.ties = 0;
+    ubdateScoreElement();
+    " class="css-reset"> reset score</button>
+
+    
+
+
+    <script src="scripts/10-rock-payper-scissors.js"></script>
+  </body>
+</html>
