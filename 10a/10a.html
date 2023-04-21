@@ -27,16 +27,34 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .css-off{
+      background-color: black;
+    }
   </style>
 </head>
 
-  <body>
+  <body class="body">
     <button class="css-add-cart">Add to Cart</button>
     <button class="css-request">Request now</button>
     <button class="css-Schedule">Schedule for later</button>
-
+    <button onclick="on_off()" class="js-on_off">On</button>
 
   <script>
+    function on_off(){
+      const buttonElement = document.querySelector('.js-on_off');
+      if (buttonElement.innerText === "On"){
+        buttonElement.innerHTML = "Off";
+        document.querySelector(".body").classList.add("css-off");
+      }
+      else{
+        buttonElement.innerHTML = 'Off'
+        buttonElement.innerHTML = "On";
+
+        document.querySelector(".body").classList.remove('css-off')
+      }
+
+    }
+   
 
   </script>
   </body>
