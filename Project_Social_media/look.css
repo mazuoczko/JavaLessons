@@ -1,0 +1,9 @@
+.login{
+  display: grid;
+  place-items: center;
+  
+
+}
+body{
+  background-color: green;
+}
