@@ -1,13 +1,44 @@
 
-.parent{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+
+
+html{
   margin: 0;
   height: 100%;
+} 
+
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  grid-template-columns: 40% 20% 40%;
+  justify-items: center;
+  align-items: center;
 }
+
 .item-a{
-  grid-row: 2/3;
   grid-column: 2/3;
+  grid-row: 2/3;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+}
+.login{
+grid-area: 1 / 1 / 2 / 1;
+}
+.pasword{
+  grid-area: 1 / 1 / 2 / 1;
+}
+.button-L{
+  grid-row: 2/1;
+  
+  justify-self: center;
+  align-self: center;
 }
 
