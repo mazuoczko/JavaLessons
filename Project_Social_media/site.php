@@ -12,8 +12,8 @@
     </form>
 
     <?php
-    $friends = array("kewin", "magdalen","adcasdv" )
-    echo $friends[2]
+    $friends = array("kewin", "magdalen","adcasdv" );
+    echo $friends[2];
     
 
     ?>
